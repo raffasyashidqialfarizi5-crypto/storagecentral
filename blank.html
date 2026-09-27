@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blank Page</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <nav class="page-nav">
+      <button class="home-button menu-toggle" type="button" aria-expanded="false" aria-controls="page-menu">Pages</button>
+      <div class="page-menu" id="page-menu" aria-hidden="true" inert>
+        <div class="page-menu-inner">
+          <a href="blank.html">Home</a>
+          <a href="index.html">SSD Prices</a>
+          <a href="hdd.html">HDD Recommendations</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="home-hero scroll-reveal">
+        <p class="eyebrow">Your guide to faster storage</p>
+        <h1>Welcome to SSD Central</h1>
+        <p class="hero-copy">Explore SSDs and hard drives, compare their strengths, and find the right storage for your setup.</p>
+        <a class="primary-link" href="index.html">Explore SSD prices</a>
+      </section>
+
+      <section class="featured-drive scroll-reveal" aria-labelledby="featured-title">
+        <div>
+          <p class="eyebrow">SSD recommendation</p>
+          <h2 id="featured-title">WD Black SN850X</h2>
+          <p>Discover a high-performance NVMe SSD with speeds built for demanding games and creative work.</p>
+          <a class="primary-link" href="details.html?drive=sn850x">View SSD details</a>
+        </div>
+        <img class="featured-image scroll-reveal" src="https://uploads.onecompiler.io/452t4skdg/454752cu3/IMG_0278.png" alt="WD Black SN850X NVMe SSD" />
+      </section>
+
+      <section class="home-hdd-recommendations" aria-labelledby="hdd-recommendations-title">
+        <header class="hdd-recommendations-header scroll-reveal">
+          <p class="eyebrow">HDD recommendations</p>
+          <h2 id="hdd-recommendations-title">More room for your files.</h2>
+          <p>Explore traditional hard drives separately from the SSD picks, with options for everyday storage, libraries, and heavier workloads.</p>
+        </header>
+        <div class="home-hdd-grid">
+          <a class="home-hdd-card scroll-reveal" href="hdd.html#wd-blue">
+            <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-desktop-sata-hdd/gallery/wd-blue-pc-desktop-hard-drive-1tb.png.wdthumb.319.319.webp" alt="WD Blue 1TB desktop hard drive" loading="lazy" />
+            <div><p class="hdd-label">Everyday desktop</p><h3>WD Blue 1TB</h3><p>3.5-inch SATA storage for files and backups.</p></div>
+          </a>
+          <a class="home-hdd-card scroll-reveal" href="hdd.html#p300">
+            <img src="https://www.toshiba-storage.com/wp/wp-content/uploads/2019/09/P300_Highlihgt_Product_Image.png" alt="Toshiba P300 desktop hard drive" loading="lazy" />
+            <div><p class="hdd-label">Home and office</p><h3>Toshiba P300 2TB</h3><p>A balanced capacity for documents and media.</p></div>
+          </a>
+          <a class="home-hdd-card scroll-reveal" href="hdd.html#x300">
+            <img src="https://www.toshiba-storage.com/wp/wp-content/uploads/2019/09/X300_Highlihgt_Product_Image.png" alt="Toshiba X300 performance hard drive" loading="lazy" />
+            <div><p class="hdd-label">Performance desktop</p><h3>Toshiba X300 4TB</h3><p>More space for large game and creative libraries.</p></div>
+          </a>
+        </div>
+        <a class="primary-link hdd-browse-link" href="hdd.html">Browse HDD recommendations</a>
+      </section>
+
+      <section class="home-highlights" aria-labelledby="highlights-title">
+        <h2 id="highlights-title" class="scroll-reveal">What you’ll find here</h2>
+        <div class="highlight-grid">
+          <a class="highlight-card performance-card scroll-reveal" href="compare.html" aria-label="Compare SSD models">
+            <h3>Compare performance</h3>
+            <p>Check read and write speeds for popular SSD models at a glance.</p>
+          </a>
+          <article class="highlight-card trusted-brands-card scroll-reveal">
+            <h3>Browse trusted brands</h3>
+            <p>See options from WD Black and Samsung in one convenient list.</p>
+          </article>
+          <article class="highlight-card next-drive-card scroll-reveal">
+            <h3>Find your next drive</h3>
+            <p>Review the listed prices and features to help narrow down your choice.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="home-footer">SSD Central · Storage made easier</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

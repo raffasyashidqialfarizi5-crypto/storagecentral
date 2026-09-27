@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSD details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="page-nav">
+      <button class="home-button menu-toggle" type="button" aria-expanded="false" aria-controls="page-menu">Pages</button>
+      <div class="page-menu" id="page-menu" aria-hidden="true" inert>
+        <div class="page-menu-inner">
+          <a href="blank.html">Home</a>
+          <a href="index.html">SSD Prices</a>
+        </div>
+      </div>
+    </nav>
+    <main class="ssd-details-page scroll-reveal">
+      <a href="index.html">&larr; Back to SSD prices</a>
+      <h1 id="drive-name">SSD details</h1>
+      <p id="drive-price"></p>
+      <ul>
+        <li id="read-speed"></li>
+        <li id="write-speed"></li>
+        <li id="dram-info"></li>
+      </ul>
+      <p class="details-note">These details are from the SSD Prices page. Check the manufacturer’s specifications and local retailers for current product information and pricing.</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

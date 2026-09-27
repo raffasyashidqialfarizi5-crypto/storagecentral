@@ -1,0 +1,340 @@
+body {
+  padding: 25px;
+  font-family: Monospace, Sans-Serif, Verdana;
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 10px 16px;
+  border: 2px solid #222;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.home-button:hover {
+  background: #e5e5e5;
+}
+
+.page-menu {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  padding: 0 10px;
+  border: 0 solid #222;
+  border-radius: 8px;
+  background: #fff;
+  visibility: hidden;
+  transition: grid-template-rows 300ms ease, padding 300ms ease,
+    border-width 300ms ease, visibility 300ms linear;
+}
+
+.page-menu.is-open {
+  grid-template-rows: 1fr;
+  padding: 10px;
+  border-width: 2px;
+  visibility: visible;
+  transition: grid-template-rows 300ms ease, padding 300ms ease,
+    border-width 300ms ease, visibility 0s;
+}
+
+.page-menu-inner {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.page-menu a {
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home-hero {
+  padding: clamp(32px, 7vw, 76px);
+  border: 3px solid #222;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #e8f2ff, #f5f5f5);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #315f91;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.hero-copy {
+  max-width: 620px;
+  margin: 18px 0 26px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.primary-link {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 2px solid #222;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 250ms ease, color 250ms ease, transform 250ms ease;
+}
+
+.primary-link:hover {
+  transform: translateY(-2px);
+  background: #fff;
+  color: #222;
+}
+
+.featured-drive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 28px;
+  padding: 28px;
+  border: 2px solid #222;
+  border-radius: 14px;
+  background: #f2f2f2;
+}
+
+.featured-drive h2 {
+  margin: 0;
+}
+
+.featured-drive p:not(.eyebrow) {
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.featured-image {
+  width: min(38%, 300px);
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+  border: 3px solid #222;
+  border-radius: 12px;
+  background: #fff;
+  transform: translateX(60px);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+
+.featured-image.is-visible {
+  transform: translateX(0);
+}
+
+.home-highlights {
+  padding: 42px 0 20px;
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.home-highlights:hover {
+  transform: translateY(-15px);
+}
+.home-highlights h2 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.highlight-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 22px;
+  border: 2px solid #222;
+  border-radius: 12px;
+  background: #f2f2f2;
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.highlight-card h3 {
+  margin: 0 0 10px;
+}
+
+.highlight-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.home-footer {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding: 18px 0;
+  border-top: 1px solid #bbb;
+  color: #555;
+  text-align: center;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.performance-card:hover {
+  transform: translateY(-12px) scale(1.02);
+}
+
+.trusted-brands-card:hover {
+  transform: translateY(-12px) rotate(-1deg);
+}
+
+.next-drive-card:hover {
+  transform: translateY(-12px) scale(1.04);
+}
+
+.featured-image.scroll-reveal {
+  transform: translateX(60px);
+}
+
+.featured-image.scroll-reveal.is-visible {
+  transform: translateX(0);
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 18px;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-drive {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .featured-image {
+    width: 100%;
+  }
+}
+.featured-drive{
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.featured-drive:hover{
+  transform: translateY(-15px);
+}
+.home-hero{
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.home-hero:hover{
+  transform: translateY(-15px);
+}
+.home-hdd-recommendations {
+  max-width: 1100px;
+  margin: 54px auto 0;
+}
+.hdd-recommendations-header {
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+.hdd-recommendations-header h2 {
+  margin: 0 0 10px;
+}
+.hdd-recommendations-header > p:last-child {
+  line-height: 1.6;
+}
+.home-hdd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.home-hdd-card {
+  display: grid;
+  grid-template-rows: 170px 1fr;
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid #222;
+  border-radius: 12px;
+  background: #f2f2f2;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.home-hdd-card:hover {
+  transform: translateY(-12px);
+}
+.home-hdd-card img {
+  width: 100%;
+  height: 170px;
+  padding: 14px;
+  object-fit: contain;
+  background: #fff;
+}
+.home-hdd-card > div {
+  padding: 18px;
+}
+.home-hdd-card .hdd-label {
+  margin: 0 0 8px;
+  color: #315f91;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home-hdd-card h3 {
+  margin: 0 0 8px;
+}
+.home-hdd-card p:last-child {
+  margin: 0;
+  line-height: 1.5;
+}
+.hdd-browse-link {
+  margin-top: 20px;
+}
+@media (max-width: 700px) {
+  .home-hdd-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-hdd-card {
+    grid-template-columns: 130px minmax(0, 1fr);
+    grid-template-rows: minmax(150px, auto);
+  }
+  .home-hdd-card img {
+    height: 100%;
+    min-height: 150px;
+  }
+}

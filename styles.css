@@ -1,0 +1,330 @@
+body{
+  padding: 25px;
+  font-family: Monospace, Sans-Serif, Verdana;
+}
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.home-button {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 10px 16px;
+  border: 2px solid #222;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+.home-button:hover {
+  background: #e5e5e5;
+}
+.page-menu {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  padding: 0 10px;
+  border: 0 solid #222;
+  border-radius: 8px;
+  background: #fff;
+  visibility: hidden;
+  transition: grid-template-rows 300ms ease, padding 300ms ease,
+    border-width 300ms ease, visibility 300ms linear;
+}
+.page-menu.is-open {
+  grid-template-rows: 1fr;
+  padding: 10px;
+  border-width: 2px;
+  visibility: visible;
+  transition: grid-template-rows 300ms ease, padding 300ms ease,
+    border-width 300ms ease, visibility 0s;
+}
+.page-menu-inner {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+}
+.page-menu a {
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+}
+.page-menu a:hover {
+  text-decoration: underline;
+}
+.details-link {
+    align-self: flex-start;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px solid #222;
+    border-radius: 7px;
+    background: #fff;
+    color: #222;
+    font-size: 16px;
+    text-decoration: none;
+}
+.details-link:hover {
+    background: #222;
+    color: #fff;
+}
+.ssd-details-page {
+    max-width: 760px;
+    margin: 30px auto;
+    padding: 24px;
+    border: 4px solid #222;
+    border-radius: 12px;
+    background: #9e9e9e;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ssd-details-page > a {
+    color: #222;
+}
+.ssd-details-page li {
+    margin: 10px 0;
+}
+.details-note {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.sn850x {
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    min-height: 150px;
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #9e9e9e;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+    gap: 10px;
+}
+.speed-details {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.speed-details p {
+    margin: 0;
+}
+.speed-details img {
+    width: 220px;
+    height: 100px;
+    object-fit: contain;
+}
+.sn850x:hover {
+    transform: translateY(-15px);
+}
+.ssdimg{
+    border:solid 4px;
+    border-radius:10px;
+    background-color:white;
+}
+.sn8100x {
+    font-weight: 700;
+    font-size:20px;
+    border:solid 4px;
+    border-radius:10px;
+    background-color:#9e9e9e;
+    margin:30px;
+    margin-right:0px;
+    margin-left:auto;
+    min-height:150px;
+    display:flex;
+    flex-direction:column;
+    transition:transform 0.5s ease;
+    gap: 10px;
+    position:relative;
+}
+.sn8100xspd {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.sn8100xspd p {
+    margin: 0;
+}
+.sn8100ximg {
+    width: 220px;
+    height: 100px;
+    object-fit: contain;
+    border: solid 4px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sn8100x:hover{
+    transform: translateY(-15px);
+}
+.sn770{
+  font-weight:700;
+  font-size: 20px;
+  border:solid 4px;
+  border-radius:10px;
+  background-color: #9e9e9e;
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.sn770img{
+    width:220px;
+    border:solid 4px;
+    border-radius:10px;
+    background-color:white;
+    height:100px;
+}
+.sn770spd{
+    display:flex;
+    align-items: center;
+    gap:24px
+}
+ .sn770:hover{
+    transform: translateY(-15px);
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-reveal.is-visible:hover {
+    transform: translateY(-15px);
+}
+.samsung990pro {
+    font-weight:700;
+    font-size:20px;
+    border:solid 4px;
+    border-radius:10px;
+    background-color:#9e9e9e;
+}
+.samsung990proimg{
+    width:220px;
+    height:70px;
+    border:solid 4px;
+    border-radius:10px;
+    background-color:white;
+}
+.samsung9100ssd{
+  margin: 30px auto 0;
+  font-weight:700;
+  font-size:20px;
+  border:solid 4px;
+  border-radius:10px;
+  background-color:#9e9e9e;
+  gap:10px;
+}
+.samsung9100ssdimg{
+  width:200px;
+  border:solid 4px;
+  height:70px;
+  border-radius:10px;
+  background-color:white
+}
+.sn850x + .sn850x {
+    margin-top: 20px;
+}
+
+.hdd-page {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.hdd-header {
+    margin: 0 0 34px;
+    padding: 22px 0;
+}
+.hdd-header h1 {
+    margin: 0 0 14px;
+}
+.hdd-header > p:not(.eyebrow) {
+    max-width: 720px;
+    line-height: 1.6;
+}
+.hdd-catalog > h2 {
+    margin: 24px 0 16px;
+}
+.hdd-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
+    align-items: center;
+    gap: 26px;
+    width: 100%;
+    min-height: 250px;
+    margin: 22px 0;
+    padding: 20px;
+    border: 4px solid #222;
+    border-radius: 10px;
+    background: #9e9e9e;
+    font-size: 18px;
+    font-weight: 700;
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+.hdd-card:hover {
+    transform: translateY(-15px);
+}
+.hdd-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.35em;
+}
+.hdd-card-copy > p {
+    margin: 8px 0;
+}
+.hdd-label {
+    color: #333;
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.hdd-model,
+.hdd-price,
+.hdd-use {
+    line-height: 1.5;
+}
+.hdd-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    padding-left: 20px;
+    line-height: 1.45;
+}
+.hdd-image {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    padding: 14px;
+    border: 4px solid #222;
+    border-radius: 10px;
+    background: #fff;
+}
+.hdd-note {
+    margin: 24px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+@media (max-width: 700px) {
+    .hdd-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+    }
+    .hdd-image {
+        height: 190px;
+    }
+}

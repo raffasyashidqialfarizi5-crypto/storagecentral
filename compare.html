@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare SSDs and HDDs | SSD Central</title>
+    <link rel="stylesheet" href="compare.css" />
+  </head>
+  <body>
+    <nav class="page-nav" aria-label="Main navigation">
+      <button class="home-button menu-toggle" type="button" aria-expanded="false" aria-controls="page-menu">Pages</button>
+      <div class="page-menu" id="page-menu" aria-hidden="true" inert>
+        <div class="page-menu-inner">
+          <a href="blank.html">Home</a>
+          <a href="index.html">SSD Prices</a>
+          <a href="hdd.html">HDD Recommendations</a>
+          <a href="compare.html" aria-current="page">Compare Drives</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="compare-page">
+      <header class="compare-header">
+        <p class="eyebrow">SSD Central · Side-by-side comparison</p>
+        <h1>Find the right drive for you.</h1>
+        <p class="intro">Choose up to three SSDs or HDDs to compare their prices, capacity, and performance.</p>
+      </header>
+
+      <section class="comparison-grid" aria-label="Compare storage drives">
+        <article class="drive-column" data-slot="0">
+          <label class="sr-only" for="drive-select-0">First drive</label>
+          <select class="drive-select" id="drive-select-0"></select>
+          <img class="drive-image" alt="" />
+          <h2 class="drive-name"></h2>
+          <a class="drive-details" href="#">View details <span aria-hidden="true">›</span></a>
+          <dl class="spec-list"></dl>
+        </article>
+        <article class="drive-column" data-slot="1">
+          <label class="sr-only" for="drive-select-1">Second drive</label>
+          <select class="drive-select" id="drive-select-1"></select>
+          <img class="drive-image" alt="" />
+          <h2 class="drive-name"></h2>
+          <a class="drive-details" href="#">View details <span aria-hidden="true">›</span></a>
+          <dl class="spec-list"></dl>
+        </article>
+        <article class="drive-column" data-slot="2">
+          <label class="sr-only" for="drive-select-2">Third drive</label>
+          <select class="drive-select" id="drive-select-2"></select>
+          <img class="drive-image" alt="" />
+          <h2 class="drive-name"></h2>
+          <a class="drive-details" href="#">View details <span aria-hidden="true">›</span></a>
+          <dl class="spec-list"></dl>
+        </article>
+      </section>
+      <p class="comparison-note">Prices and specifications are shown as listed on this site. Check manufacturer specifications and local retailers for current information.</p>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="compare.js"></script>
+  </body>
+</html>
